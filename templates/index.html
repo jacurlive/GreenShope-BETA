@@ -1,0 +1,394 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GreenShop</title>
+  <link rel="stylesheet" href="{{ url_for('static', path='css/style.css') }}">
+  <link rel="icon" href="{{ url_for('static', path='images/Vector.png') }}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+  integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="header__all mt-4 mb-5 ">
+        <div class="imeges">
+          <img src="{{ url_for('static', path='images/header__img.png') }}" alt="">
+        </div>
+        <div class="header__left d-flex justify-content-between">
+          <nav class="nav d-flex justify-content-around">
+            <a  href="/" class="activ home" style="color: #3D3D3D;">Home</a>
+            <a  href="shop" class="nav-link home" style="color: #3D3D3D;">Shop</a>
+            <a  href="" class="nav-link home" style="color: #3D3D3D;">Plant Care</a>
+            <a  href="" class="nav-link home"  style="color: #3D3D3D;">Blogs</a>
+          </nav>
+        </div>
+        <div class="header__right d-flex justify-content-around align-items-center">
+          <a href=""><img src="{{ url_for('static', path='images/search.png') }}" alt="" style="margin-right: 30px;"></a>
+          <a href="card"><img src="{{ url_for('static', path='images/shopping.png') }}" alt="" style="margin-right: 30px;"></a>
+          <a href="login"  class="button header__content-login"><img src="{{ url_for('static', path='images/Logout.png') }}" alt=""> Login</a>
+        </div>
+      </div>
+
+      <div class="header__content ">
+        <div class="container">
+          <div id="carouselExampleIndicators" class="carousel slide " data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                class="active indecators" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2" class="indecators"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active  ">
+                <div class="header__content-left d-flex justify-content-between">
+                  <div class="header__content-leftt d-flex flex-column justify-content-center">
+                    <p class="header__content-welcome">Welcome to GreenShop</p>
+                    <h4 class="header__content-make">Let’s Make Better <span class="header__content-planet" >Planet</span> </h4>
+                    <p class="header__content-pp">We are an online plant shop offering a wide range of cheap and trendy plants. Use our plants to
+                      create an unique Urban Jungle. Order your favorite plants!</p>
+                      <p class="header__contetn-pp">We are an online plant shop offering a wide range </p>
+                    <a class="header__content-aa d-flex" href="" >SHOP NOW <img src="{{ url_for('static', path='images/Arrow - Rght.png') }}" class="arrow" alt=""></a>
+                  </div>
+                  <div class="header__content-right">
+                    <img src="{{ url_for('static', path='images/01 1.png') }}" alt="" class="header__content-img w-100 ">
+                  </div>
+
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="header__content-left d-flex justify-content-between ">
+                  <div class="header__content-leftt d-flex flex-column justify-content-center">
+                    <p
+                    style="font-weight: 500; font-size: 14px;line-height: 16px; letter-spacing: 0.1em;text-transform: uppercase; color: #3D3D3D; font-family: 'Roboto', sans-serif;">
+                      Welcome to GreenShop</p>
+                    <h4 class="header__content-make">Let’s Make Better <span class="header__content-planet">Planet</span> </h4>
+                    <p class="header__content-pp"> We are an online plant shop offering a wide range of cheap and trendy plants. Use our plants to create an unique Urban Jungle. Order your favorite plants!</p>
+                    <a href=""  class="header__content-aa d-flex">SHOP NOW <img src="{{ url_for('static', path='images/Arrow - Rght.png') }}" class="arrow" alt=""></a>
+                  </div>
+                  <div class="header__content-right">
+                    <img src="{{ url_for('static', path='images/01 1.png') }}" alt="" class="header__content-img w-100 ">
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="main__all d-flex justify-content-between">
+        <div class="main__all-left " style="width: 310px; ">
+          <h4 style="font-weight: 700; font-size: 18px; line-height: 16px; color: #3D3D3D;  font-family: 'Roboto', sans-serif;">
+            Categories</h4>
+          <div class="main__all-general">
+            <div class=" p  d-flex justify-content-between mt-4">
+              <p class="pr">House Plants</p>
+              <p class="pr">(33)</p>
+            </div>
+            <div class=" p  d-flex justify-content-between mt-1">
+              <p class="pr">Potter Plants</p>
+              <p class="pr">(12)</p>
+            </div>
+            <div class=" p  d-flex justify-content-between mt-1">
+              <p class="pr">Seeds</p>
+              <p class="pr">(65)</p>
+            </div>
+            <div class=" p  d-flex justify-content-between mt-1">
+              <p class="pr">Small Plants </p>
+              <p class="pr">(39)</p>
+            </div>
+            <div class=" p  d-flex justify-content-between mt-1">
+              <p class="pr" >Big Plants</p>
+              <p class="pr">(23)</p>
+            </div>
+            <div class=" p  d-flex justify-content-between mt-1">
+              <p class="pr"> Succulents</p>
+              <p class="pr">(17)</p>
+            </div>
+            <div class=" p  d-flex justify-content-between mt-1">
+              <p class="pr">Trerrariums</p>
+              <p class="pr">(19)</p>
+            </div>
+            <div class=" p  d-flex justify-content-between mt-1">
+              <p class="pr"> Gardening </p>
+              <p class="pr">(13)</p>
+            </div>
+            <div class=" p  d-flex justify-content-between mt-1 mb-4">
+              <p class="pr">Accessories</p>
+              <p class="pr">(18)</p>
+            </div>
+          </div>
+          <h4  style="font-weight: 700; margin-bottom: 20px; font-size: 18px; line-height: 16px; color: #3D3D3D;  font-family: 'Roboto', sans-serif;">
+            Price Range</h4>
+          <input type="range" class="mb-3">
+          <p style="font-weight: 400; font-size: 17px;line-height: 16px;color: #3D3D3D; margin-bottom: 30px;">Price: <span style="font-weight: 400; font-size: 17px;line-height: 16px;color:#46A358">$39 - $1230</span> </p>
+          <a href="" style="font-weight: 700; background: #46A358; padding: 11px 26px; width: 140px; text-decoration: none; border-radius: 6px; font-family: 'Roboto', sans-serif; font-size: 16px; line-height: 20px; text-transform: uppercase; color: #FFFFFF;">Filter</a>
+          <h4 style="font-weight: 700; margin-top: 60px; font-size: 18px; line-height: 16px; color: #3D3D3D;  font-family: 'Roboto', sans-serif;">
+            Size</h4>
+          <div class="main__all-general">
+            <div class=" p  d-flex justify-content-between mt-4">
+              <p class="pr">Small</p>
+              <p class="pr">(119)</p>
+            </div>
+            <div class=" p  d-flex justify-content-between mt-1">
+              <p class="pr">Medium</p>
+              <p class="pr">(86)</p>
+            </div>
+            <div class=" p  d-flex mt-1 justify-content-between">
+              <p class="pr" style=" margin-bottom: 30px;">Large</p>
+              <p class="pr">(78)</p>
+            </div>
+          </div>
+          <img src="{{ url_for('static', path='images/Super Sale Banner.png') }}" alt="" style="margin-left: -30px ;">
+        </div>
+
+
+        <div class="main__all-right">
+          <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container-fluid">
+              <div class="mam">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navvbar navbar-collapse d-flex justify-content-between" id="navbarNavDropdown">
+
+                <div class="">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class=" link" href="#">All Plants</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class=" link" aria-current="page" href="#">New Arrivals</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class=" link" href="#">Sale</a>
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <li class="nav-item dropdown">
+                    <a class="link" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      Short by: Default sorting <img src="{{ url_for('static', path='images/Stroke 1.png') }}" alt="" class="mx-1">
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          </nav>
+
+<div class="main__all-cards ">
+  <div class="main__all-card" style="width:260px; margin-top: 40px; margin-bottom: 70px;">
+      <img src="{{ url_for('static', path='images/1.png') }}" alt="">
+      <p class="title">Barberton Daisy</p>
+      <p class="des">$119.00</p>
+  </div>
+  <div class="main__all-card" style="width:260px; margin-top: 40px; margin-bottom: 70px ;">
+    <img src="{{ url_for('static', path='images/2.png') }}" alt="">
+    <p class="title">Angel Wing Begonia</p>
+    <p class="des">$169.00</p>
+  </div>
+  <div class="main__all-card" style="width:260px; margin-top: 40px; margin-bottom: 70px;">
+    <img src="{{ url_for('static', path='images/3.png') }}" alt="">
+    <p class="title">African Violet</p>
+    <p class="des">$199.00</p>
+  </div>
+  <div class="main__all-card" style="width:260px;  margin-bottom: 70px;">
+    <img src="{{ url_for('static', path='images/4.png') }}" alt="" >
+    <p class="title" style="margin-top:16px;">Beach Spider Lily</p>
+    <p class="des">$129.00</p>
+  </div>
+  <div class="main__all-card" style="width:260px; margin-bottom: 70px;">
+    <img src="{{ url_for('static', path='images/5.png') }}" alt="" >
+    <p class="title">Blushing Bromeliad</p>
+    <p class="des">$139.00</p>
+  </div>
+  <div class="main__all-card" style="width:260px; margin-bottom: 70px;">
+    <img src="{{ url_for('static', path='images/6.png') }}" alt="" >
+    <p class="title">Aluminum Plant</p>
+    <p class="des">$179.00</p>
+  </div>
+  <div class="main__all-card" style="width:260px; margin-bottom: 70px;">
+    <img src="{{ url_for('static', path='images/7.png') }}" alt="" >
+    <p class="title">Bird's Nest Fern</p>
+    <p class="des">$99.00</p>
+  </div>
+  <div class="main__all-card" style="width:260px; margin-bottom: 70px;">
+    <img src="{{ url_for('static', path='images/8.png') }}" alt="" >
+    <p class="title">Broadleaf Lady Palm</p>
+    <p class="des">$59.00</p>
+  </div>
+  <div class="main__all-card card9" style="width:260px; margin-bottom: 70px;">
+    <img src="{{ url_for('static', path='images/9.png') }}" alt="" >
+    <p class="title">Chinese Evergreen</p>
+    <p class="des">$39.00</p>
+  </div>
+</div>
+      </div>
+  </div>
+    <div class="">
+        <img src="{{ url_for('static', path='images/02.png') }}" alt="" style="margin-bottom: 140px;" class="imgg">
+    </div>
+    <div class="main__contect">
+      <h2 class="c-title" style="margin-bottom: 15px;">Our Blog Posts</h2>
+      <p class="c-des" style="margin-bottom: 35px;">We are an online plant shop offering a wide range of cheap and trendy plants.</p>
+      <div class="main__content-cards" style="margin-bottom: 100px;" >
+        <div class="main__content-card"  style="margin-bottom: 20px;" >
+          <img src="{{ url_for('static', path='images/c-1.png') }}" alt="">
+          <p class="span mt-3 mb-2">September 12  I Read in 6 minutes</p>
+          <h2 class="main__content-title">Cactus & Succulent Care Tips</h2>
+          <p class="main__content-des">Cacti are succulents are easy care plants for any home or patio.</p>
+          <a href="" class="btn-content">Read More <img src="{{ url_for('static', path='images/Arrow - Right.png') }}" alt=""></a>
+        </div>
+        <div class="main__content-card" style="margin-bottom: 20px;">
+          <img src="{{ url_for('static', path='images/c-2.png') }}" alt="">
+          <p class="span mt-3 mb-2">September 13  I Read in 2 minutes</p>
+          <h2 class="main__content-title">Top 10 Succulents for Your Home</h2>
+          <p class="main__content-des">Best in hanging baskets. Prefers medium to high light.</p>
+          <a href="" class="btn-content">Read More <img src="{{ url_for('static', path='images/Arrow - Right.png') }}" alt=""></a>
+        </div>
+        <div class="main__content-card" style="margin-bottom: 20px;">
+          <img src="{{ url_for('static', path='images/c-3.png') }}" alt="">
+          <p class="span mt-3 mb-2">September 15  I Read in 3 minutes</p>
+          <h2 class="main__content-title">Cacti & Succulent Care Tips</h2>
+          <p class="main__content-des">Cacti and succulents thrive in containers and because most are..</p>
+          <a href="" class="btn-content">Read More <img src="{{ url_for('static', path='images/Arrow - Right.png') }}" alt=""></a>
+        </div>
+        <div class="main__content-card" style="margin-bottom: 20px;">
+          <img src="{{ url_for('static', path='images/c-4.png') }}" alt="">
+          <p class="span mt-3 mb-2">September 15  I Read in 2 minutes</p>
+          <h2 class="main__content-title">Best Houseplants Room by Room</h2>
+          <p class="main__content-des">The benefits of houseplants are endless. In addition to..</p>
+          <a href="" class="btn-content">Read More <img src="{{ url_for('static', path='images/Arrow - Right.png') }}" alt=""></a>
+        </div>
+      </div>
+    </div> 
+    <div class=" main_cactus-cards d-flex justify-content-between flex-wrap align-items-center" style="background: #FBFBFB;">
+    <div class="main__cactus-cards d-flex flex-wrap justify-content-around" >
+      <div class="main__cactus-card" style=" padding: 10px 26px 23px 27px;" >
+        <img src="{{ url_for('static', path='images/cactus1.PNG') }}" alt="">
+        <h3 class="main__cactus-title">Garden Care</h3>
+        <p class="main__cactus-des">We are an online plant shop offering a wide range of cheap and trendy plants.</p>
+      </div>
+      <div class="main__cactus-card " style=" padding: 10px 26px 23px 27px;" >
+        <img src="{{ url_for('static', path='images/cactus.png') }}" alt="">
+        <h3 class="main__cactus-title" style="margin-top: 23px;">Plant Renovation</h3>
+        <p class="main__cactus-des">We are an online plant shop offering a wide range of cheap and trendy plants.</p>
+      </div>
+      <div class="main__cactus-card" style=" padding: 10px 26px 23px 27px; ">
+        <img src="{{ url_for('static', path='images/cactus3.png') }}" alt="">
+        <h3 class="main__cactus-title" style="margin-top: 24px;">Watering Graden</h3>
+        <p class="main__cactus-des">We are an online plant shop offering a wide range of cheap and trendy plants.</p>
+      </div>
+    </div>
+    <div class="main__cactus-div" style="padding: 35px 25px 32px 0;">
+      <p class="main__cactus-text">Would you like to join newsletters?</p>
+      <form class="d-flex main__cactus-form">
+        <input class="form-control " type="search" placeholder="enter your email address..." style="background: #FFFFFF; box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.06); border-radius: 
+        6px 0 0 6px; margin-right: 0; font-weight: 400;  font-size: 14px; line-height: 16px; padding: 12px 86px 12px 12px; width: 280px; border: 1px solid #EFF0F6;" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit" style="padding: 12px 25px ; font-weight: 700;
+        font-size: 18px;line-height: 16px;color: #FFFFFF  ;  font-family: 'Roboto', sans-serif; background: #46A358; border-color: #46A358; border-radius: 0px 6px 6px 0px;">Join</button>
+      </form>
+      <p class="main__cactus-descr">We usually post offers and challenges in newsletter. We’re your online houseplant destination. We offer a wide range of houseplants and accessories shipped directly from our (green)house to yours! </p>
+    </div>
+  </div> 
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center flex-wrap" style="background: rgba(70, 163, 88, 0.1); padding: 27px 130px 25px 23px ;">
+        <img src="{{ url_for('static', path='images/header__img.png') }}" alt="">
+        <div class="d-flex align-items-center">
+          <img src="{{ url_for('static', path='images/Location.png') }}" alt="">
+          <p class="footer__des">70 West Buckingham Ave.Farmingdale, NY 11735</p>
+        </div>
+        <div class=" contact d-flex align-items-center">
+          <img src="{{ url_for('static', path='images/Message.png') }}" alt="">
+          <p class="footer__des">contact@greenshop.com</p>
+        </div>
+        <div class=" contact d-flex align-items-center">
+          <img src="{{ url_for('static', path='images/Calling.png') }}" alt="">
+          <p class="footer__des">+88 01911 717 490</p>
+        </div>
+      </div>
+
+
+      <div class="footer__content">
+        <div class="footer__content-first d-flex flex-column ">
+          <h4 class="footer__content-title">My Account</h4>
+          <a href="" class="footer__content-a">My Account</a>
+          <a href="" class="footer__content-a">Our stores</a>
+          <a href="" class="footer__content-a">Contact us</a>
+          <a href="" class="footer__content-a">Career</a>
+          <a href="" class="footer__content-a">Specials</a>
+        </div>
+        <div class="footer__content-first d-flex flex-column ">
+          <h4 class="footer__content-title">Help & Guide</h4>
+          <a href="" class="footer__content-a">Help Center</a>
+          <a href="" class="footer__content-a">How to Buy</a>
+          <a href="" class="footer__content-a">Shipping & Delivery</a>
+          <a href="" class="footer__content-a">Product Policy</a>
+          <a href="" class="footer__content-a">How to Return</a>
+        </div>
+        <div class="footer__content-first d-flex flex-column ">
+          <h4 class="footer__content-title">Categories</h4>
+          <a href="" class="footer__content-a">House Plants</a>
+          <a href="" class="footer__content-a">Potter Plants</a>
+          <a href="" class="footer__content-a">SeedsSmall </a>
+          <a href="" class="footer__content-a">Plants</a>
+          <a href="" class="footer__content-a">Accessories</a>
+        </div>
+        <div class="footer__content-all">
+        <div class="d-flex flex-column social">
+          <h4 class="footer__content-titlee">Social Media</h4>
+          <div class="d-flex justify-content-between">
+            <img src="{{ url_for('static', path='images/Facebook.png') }}" alt="" style="padding:7px 11px ;"  class="footer__link">
+            <img src="{{ url_for('static', path='images/Instagram.png') }}" alt="" class="footer__link">
+            <img src="{{ url_for('static', path='images/Twitter.png') }}" alt="" class="footer__link">
+            <img src="{{ url_for('static', path='images/Linkedin.png') }}" alt="" class="footer__link">
+            <img src="{{ url_for('static', path='images/Union.png') }}" alt="" class="footer__link">
+          </div>
+        </div>
+          <div class="d-flex justify-content-between align-items-start flex-column">
+            <h4 class="footer__content-title "  >We accept</h4>
+            <img src="{{ url_for('static', path='images/image 16.png') }}" alt="">
+          </div>
+          
+        </div>
+      </div>
+      <div class="">
+        <p class="parag">© 2021 GreenShop. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  
+</body>
+
+</html>

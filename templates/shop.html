@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenShop</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="icon" href="../static/images/Vector.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+          integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+<header>
+    <div class="container">
+        <div class="header__all mt-4 mb-5 ">
+            <div class="imeges">
+                <img src="../static/images/header__img.png" alt="">
+            </div>
+            <div class="header__left d-flex justify-content-between">
+                <nav class="nav d-flex justify-content-around">
+                    <a href="/" class="activ home" style="color: #3D3D3D;">Home</a>
+                    <a href="shop" class="nav-link home" style="color: #3D3D3D;">Shop</a>
+                    <a href="" class="nav-link home" style="color: #3D3D3D;">Plant Care</a>
+                    <a href="" class="nav-link home" style="color: #3D3D3D;">Blogs</a>
+                </nav>
+            </div>
+            <div class="header__right d-flex justify-content-around align-items-center">
+                <a href=""><img src="../static/images/search.png" alt="" style="margin-right: 30px;"></a>
+                <a href="card"><img src="../static/images/shopping.png" alt="" style="margin-right: 30px;"></a>
+                <a href="login" class="button header__content-login"><img src="../static/images/Logout.png" alt=""> Login</a>
+            </div>
+        </div>
+        <a href="/" style="text-decoration: none; color: #3D3D3D;"><p
+                style="font-weight: 700; font-size: 15px; line-height: 16px;">Home
+            <a href="shop.html" style="text-decoration: none;"><span class="shop"
+                                                                     style="font-weight: 400;">/ Shop</span></a></a>
+
+        <div class="heaader__all">
+            <div class="heaader__left">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators itdecatorb">
+                        <div>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                    class="active"
+                                    aria-current="true" aria-label="Slide 1" style="width: 0;height: 0;">
+                                <img style="margin-left: 530px ; margin-top: -400px;" src="../static/images/sl1.png" alt="">
+                            </button>
+                        </div>
+                        <div>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                    aria-label="Slide 2" style="width: 0;height: 0; ">
+                                <img style="margin-left: 530px ; margin-top: -200px; " src="../static/images/sl2.png" alt="">
+                            </button>
+                        </div>
+                        <div class="">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                    aria-label="Slide 3" style="width: 0;height: 0;">
+                                <img style="margin-left: 530px ; margin-top: -35px;" src="../static/images/sl1.png" alt="">
+                            </button>
+                        </div>
+                        <div class="">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                                    aria-label="Slide 4" style="width: 0;height: 0;">
+                                <img style="margin-left: 530px ; margin-top: 50px;" src="../static/images/sl2.png" alt="">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active ">
+                            <div class=" card-carusel ">
+                                <div class="header__content-left ">
+                                    <div class="header__content-left">
+                                        <img src="../static/images/slbig2.png" alt="" class="header__content-img w-150 "
+                                             style="background: #FBFBFB;">
+                                    </div>
+                                </div>
+                                <div class="header__content-right">
+                                    <h3 class="heaader-title">Barberton Daisy</h3>
+                                    <div class="heaader-div d-flex justify-content-between align-items-center"
+                                         style="border-bottom: 0.3px solid rgba(70, 163, 88, 0.5); padding-bottom: 10px; ">
+                                        <p class="heaader-des">$119.00</p>
+                                        <img src="../static/images/stars.png" alt="">
+                                    </div>
+                                    <h4 class="heaader__content-title">Short Description:</h4>
+                                    <p class="heaader__content-des" style=" margin-bottom: 25px;">The ceramic cylinder
+                                        planters come with a wooden stand to help elevate
+                                        your plants off the ground. The ceramic cylinder planters come with a wooden
+                                        stand to help elevate
+                                        your plants off the ground. </p>
+                                    <h4 class="heaader__content-title">Size:</h4>
+                                    <div class="als d-flex">
+                                        <p class="sizes">S</p>
+                                        <p class="sizes">M</p>
+                                        <p class="sizes">L</p>
+                                        <p class="sizes">XL</p>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <img src="../static/images/q1.png" alt="">
+                                        <a href="" class="a_l" style="margin-left: 25px;">Buy NOW</a>
+                                        <a href="" class="a_l" style="margin-left: 10px; margin-right: 10px;">Add to
+                                            cart</a>
+                                        <img src="../static/images/heard.png" alt=""
+                                             style="border: 1px solid #46A358; padding: 10px; border-radius: 6px;">
+                                    </div>
+                                    <p class="heaader__content-des" style="margin-top: 25px; margin-bottom: 0;">SKU:
+                                        <span class="sp"> 1995751877966</span></p>
+                                    <p class="heaader__content-des" style="margin-top: 3px ;  margin-bottom: 0;">
+                                        Categories: <span class="sp">Potter Plants</span></p>
+                                    <p class="heaader__content-des" style="margin-top: 3px ;  margin-bottom: 18px;">
+                                        Tags: <span class="sp">Home, Garden, Plants</span></p>
+                                    <div class="d-flex align-items-center ">
+                                        <p class="heaader__content-title">Share this products:</p>
+                                        <a href=""><img src="../static/images/Facebook_black.png" alt=""
+                                                        style="margin-left: 17px;"></a>
+                                        <a href=""><img src="../static/images/Twitter1.png" alt="" style="margin-left: 20px;"></a>
+                                        <a href=""><img src="../static/images/in.png" alt="" style="margin-left: 20px;"></a>
+                                        <a href=""><img src="../static/images/Vector%2013%20.png" alt=""
+                                                        style="margin-left: 20px;"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card-carusel">
+                                <div class="header__content-left ">
+                                    <div class="header__content-left">
+                                        <img src="../static/images/slbig2.png" alt="" class="header__content-img w-150 ">
+                                    </div>
+                                </div>
+                                <div class="header__content-right">
+                                    <h3 class="heaader-title">Barberton Daisy</h3>
+                                    <div class="heaader-div d-flex justify-content-between align-items-center"
+                                         style="border-bottom: 0.3px solid rgba(70, 163, 88, 0.5); padding-bottom: 10px; ">
+                                        <p class="heaader-des">$119.00</p>
+                                        <img src="../static/images/stars.png" alt="">
+                                    </div>
+                                    <h4 class="heaader__content-title">Short Description:</h4>
+                                    <p class="heaader__content-des" style=" margin-bottom: 25px;">The ceramic cylinder
+                                        planters come with a wooden stand to help elevate
+                                        your plants off the ground. The ceramic cylinder planters come with a wooden
+                                        stand to help elevate
+                                        your plants off the ground. </p>
+                                    <h4 class="heaader__content-title">Size:</h4>
+                                    <div class="als d-flex">
+                                        <p class="sizes">S</p>
+                                        <p class="sizes">M</p>
+                                        <p class="sizes">L</p>
+                                        <p class="sizes">XL</p>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <img src="../static/images/q1.png" alt="">
+                                        <a href="" class="a_l" style="margin-left: 25px;">Buy NOW</a>
+                                        <a href="" class="a_l" style="margin-left: 10px; margin-right: 10px;">Add to
+                                            cart</a>
+                                        <img src="../static/images/heard.png" alt=""
+                                             style="border: 1px solid #46A358; padding: 10px; border-radius: 6px;">
+                                    </div>
+                                    <p class="heaader__content-des" style="margin-top: 25px; margin-bottom: 0;">SKU:
+                                        <span class="sp"> 1995751877966</span></p>
+                                    <p class="heaader__content-des" style="margin-top: 3px ;  margin-bottom: 0;">
+                                        Categories: <span class="sp">Potter Plants</span></p>
+                                    <p class="heaader__content-des" style="margin-top: 3px ;  margin-bottom: 18px;">
+                                        Tags: <span class="sp">Home, Garden, Plants</span></p>
+                                    <div class="d-flex align-items-center ">
+                                        <p class="heaader__content-title">Share this products:</p>
+                                        <a href=""><img src="../static/images/Facebook_black.png" alt=""
+                                                        style="margin-left: 17px;"></a>
+                                        <a href=""><img src="../static/images/Twitter1.png" alt="" style="margin-left: 20px;"></a>
+                                        <a href=""><img src="../static/images/in.png" alt="" style="margin-left: 20px;"></a>
+                                        <a href=""><img src="../static/images/Vector%2013%20.png" alt=""
+                                                        style="margin-left: 20px;"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card-carusel">
+                                <div class="header__content-left ">
+                                    <div class="header__content-left">
+                                        <img src="../static/images/slbig2.png" alt="" class="header__content-img w-150 ">
+                                    </div>
+                                </div>
+                                <div class="header__content-right">
+                                    <h3 class="heaader-title">Barberton Daisy</h3>
+                                    <div class="heaader-div d-flex justify-content-between align-items-center"
+                                         style="border-bottom: 0.3px solid rgba(70, 163, 88, 0.5); padding-bottom: 10px; ">
+                                        <p class="heaader-des">$119.00</p>
+                                        <img src="../static/images/stars.png" alt="">
+                                    </div>
+                                    <h4 class="heaader__content-title">Short Description:</h4>
+                                    <p class="heaader__content-des" style=" margin-bottom: 25px;">The ceramic cylinder
+                                        planters come with a wooden stand to help elevate
+                                        your plants off the ground. The ceramic cylinder planters come with a wooden
+                                        stand to help elevate
+                                        your plants off the ground. </p>
+                                    <h4 class="heaader__content-title">Size:</h4>
+                                    <div class="als d-flex">
+                                        <p class="sizes">S</p>
+                                        <p class="sizes">M</p>
+                                        <p class="sizes">L</p>
+                                        <p class="sizes">XL</p>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <img src="../static/images/q1.png" alt="">
+                                        <a href="" class="a_l" style="margin-left: 25px;">Buy NOW</a>
+                                        <a href="" class="a_l" style="margin-left: 10px; margin-right: 10px;">Add to
+                                            cart</a>
+                                        <img src="../static/images/heard.png" alt=""
+                                             style="border: 1px solid #46A358; padding: 10px; border-radius: 6px;">
+                                    </div>
+                                    <p class="heaader__content-des" style="margin-top: 25px; margin-bottom: 0;">SKU:
+                                        <span class="sp"> 1995751877966</span></p>
+                                    <p class="heaader__content-des" style="margin-top: 3px ;  margin-bottom: 0;">
+                                        Categories: <span class="sp">Potter Plants</span></p>
+                                    <p class="heaader__content-des" style="margin-top: 3px ;  margin-bottom: 18px;">
+                                        Tags: <span class="sp">Home, Garden, Plants</span></p>
+                                    <div class="d-flex align-items-center ">
+                                        <p class="heaader__content-title">Share this products:</p>
+                                        <a href=""><img src="../static/images/Facebook_black.png" alt=""
+                                                        style="margin-left: 17px;"></a>
+                                        <a href=""><img src="../static/images/Twitter1.png" alt="" style="margin-left: 20px;"></a>
+                                        <a href=""><img src="../static/images/in.png" alt="" style="margin-left: 20px;"></a>
+                                        <a href=""><img src="../static/images/Vector%2013%20.png" alt=""
+                                                        style="margin-left: 20px;"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card-carusel">
+                                <div class="header__content-left ">
+                                    <div class="header__content-left">
+                                        <img src="../static/images/slbig2.png" alt="" class="header__content-img w-150 ">
+                                    </div>
+                                </div>
+                                <div class="header__content-right">
+                                    <h3 class="heaader-title">Barberton Daisy</h3>
+                                    <div class="heaader-div d-flex justify-content-between align-items-center"
+                                         style="border-bottom: 0.3px solid rgba(70, 163, 88, 0.5); padding-bottom: 10px; ">
+                                        <p class="heaader-des">$119.00</p>
+                                        <img src="../static/images/stars.png" alt="">
+                                    </div>
+                                    <h4 class="heaader__content-title">Short Description:</h4>
+                                    <p class="heaader__content-des" style=" margin-bottom: 25px;">The ceramic cylinder
+                                        planters come with a wooden stand to help elevate
+                                        your plants off the ground. The ceramic cylinder planters come with a wooden
+                                        stand to help elevate
+                                        your plants off the ground. </p>
+                                    <h4 class="heaader__content-title">Size:</h4>
+                                    <div class="als d-flex">
+                                        <p class="sizes">S</p>
+                                        <p class="sizes">M</p>
+                                        <p class="sizes">L</p>
+                                        <p class="sizes">XL</p>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <img src="../static/images/q1.png" alt="">
+                                        <a href="" class="a_l" style="margin-left: 25px;">Buy NOW</a>
+                                        <a href="" class="a_l" style="margin-left: 10px; margin-right: 10px;">Add to
+                                            cart</a>
+                                        <img src="../static/images/heard.png" alt=""
+                                             style="border: 1px solid #46A358; padding: 10px; border-radius: 6px;">
+                                    </div>
+                                    <p class="heaader__content-des" style="margin-top: 25px; margin-bottom: 0;">SKU:
+                                        <span class="sp"> 1995751877966</span></p>
+                                    <p class="heaader__content-des" style="margin-top: 3px ;  margin-bottom: 0;">
+                                        Categories: <span class="sp">Potter Plants</span></p>
+                                    <p class="heaader__content-des" style="margin-top: 3px ;  margin-bottom: 18px;">
+                                        Tags: <span class="sp">Home, Garden, Plants</span></p>
+                                    <div class="d-flex align-items-center ">
+                                        <p class="heaader__content-title">Share this products:</p>
+                                        <a href=""><img src="../static/images/Facebook_black.png" alt=""
+                                                        style="margin-left: 17px;"></a>
+                                        <a href=""><img src="../static/images/Twitter1.png" alt="" style="margin-left: 20px;"></a>
+                                        <a href=""><img src="../static/images/in.png" alt="" style="margin-left: 20px;"></a>
+                                        <a href=""><img src="../static/images/Vector%2013%20.png" alt=""
+                                                        style="margin-left: 20px;"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<main>
+    <div class="container">
+        <div class="">
+            <div class="d-flex" style="border-bottom: 0.3px solid rgba(70, 163, 88, 0.5);">
+                <p class="maain__content-p">Product Description</p>
+                <p class="maain__content-p">Reviews (19)</p>
+            </div>
+            <p class="maain__content-text">The ceramic cylinder planters come with a wooden stand to help elevate your
+                plants off the ground. The ceramic cylinder planters come with a wooden stand to help elevate your
+                plants off the ground. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla augue nec
+                est tristique auctor.
+                Donec non est at libero vulputate rutrum. Morbi ornare lectus quis justo gravida semper. Nulla tellus
+                mi, vulputate adipiscing cursus eu, suscipit id nulla.</p>
+            <p class="maain__content-text">Pellentesque aliquet, sem eget laoreet ultrices, ipsum metus feugiat sem,
+                quis fermentum turpis eros eget velit. Donec ac tempus ante. Fusce ultricies massa massa. Fusce aliquam,
+                purus eget sagittis vulputate, sapien libero hendrerit est,
+                sed commodo augue nisi non neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor,
+                lorem et placerat vestibulum, metus nisi posuere nisl, in accumsan elit odio quis mi. Cras neque metus,
+                consequat et blandit et, luctus a nunc. Etiam gravida vehicula tellus, in imperdiet ligula euismod eget.
+                The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground.</p>
+            <p class="heaader__content-title" style="margin-bottom: 0;">Living Room:</p>
+            <p class="maain__content-text" style="margin-top: 7px;">The ceramic cylinder planters come with a wooden
+                stand to help elevate your plants off the ground. The ceramic cylinder planters come with a wooden stand
+                to help elevate your plants off the ground. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p class="heaader__content-title" style="margin-bottom: 0;">Dining Room:</p>
+            <p class="maain__content-text" style="margin-top: 7px;">The benefits of houseplants are endless. In addition
+                to cleaning the air of harmful toxins, they can help to improve your mood, reduce stress and provide you
+                with better sleep. Fill every room of your home with houseplants and their restorative qualities will
+                improve your life.</p>
+            <p class="heaader__content-title" style="margin-bottom: 0;">Office:</p>
+            <p class="maain__content-text" style="margin-top: 7px; margin-bottom: 125px;"> The ceramic cylinder planters
+                come with a wooden stand to help elevate your plants off the ground. The ceramic cylinder planters come
+                with a wooden stand to help elevate your plants off the ground. Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit.</p>
+            <p class="maain__content-h">Releted Products</p>
+        </div>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active indecators" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2" class="indecators"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="main__all-cards">
+                        <div class="main__all-card" style="width:230px;  margin-bottom: 70px;">
+                            <img src="../static/images/4.png" alt="">
+                            <p class="title" style="margin-top:16px;">Beach Spider Lily</p>
+                            <p class="des">$129.00</p>
+                        </div>
+                        <div class="main__all-card" style="width:230px; margin-bottom: 70px;">
+                            <img src="../static/images/5.png" alt="">
+                            <p class="title">Blushing Bromeliad</p>
+                            <p class="des">$139.00</p>
+                        </div>
+                        <div class="main__all-card" style="width:230px; margin-bottom: 70px;">
+                            <img src="../static/images/6.png" alt="">
+                            <p class="title">Aluminum Plant</p>
+                            <p class="des">$179.00</p>
+                        </div>
+                        <div class="main__all-card" style="width:230px; margin-bottom: 70px;">
+                            <img src="../static/images/7.png" alt="">
+                            <p class="title">Bird's Nest Fern</p>
+                            <p class="des">$99.00</p>
+                        </div>
+                        <div class="main__all-card" style="width:230px; margin-bottom: 70px;">
+                            <img src="../static/images/9.png" alt="">
+                            <p class="title">Chinese Evergreen</p>
+                            <p class="des">$39.00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="main__all-cards ">
+                        <div class="main__all-card" style="width:260px;; margin-bottom: 70px;">
+                            <img src="../static/images/1.png" alt="">
+                            <p class="title">Barberton Daisy</p>
+                            <p class="des">$119.00</p>
+                        </div>
+                        <div class="main__all-card" style="width:260px; margin-bottom: 70px ;">
+                            <img src="../static/images/2.png" alt="">
+                            <p class="title">Angel Wing Begonia</p>
+                            <p class="des">$169.00</p>
+                        </div>
+                        <div class="main__all-card" style="width:260px; margin-bottom: 70px;">
+                            <img src="../static/images/3.png" alt="">
+                            <p class="title">African Violet</p>
+                            <p class="des">$199.00</p>
+                        </div>
+                        <div class="main__all-card" style="width:230px; margin-bottom: 70px;">
+                            <img src="../static/images/7.png" alt="">
+                            <p class="title">Bird's Nest Fern</p>
+                            <p class="des">$99.00</p>
+                        </div>
+                        <div class="main__all-card" style="width:230px; margin-bottom: 70px;">
+                            <img src="../static/images/9.png" alt="">
+                            <p class="title">Chinese Evergreen</p>
+                            <p class="des">$39.00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=" d-flex justify-content-between" style="background: #FBFBFB; margin-top: 120px;">
+            <div class=" main_cactus-cards d-flex justify-content-between flex-wrap align-items-center"
+                 style="background: #FBFBFB;">
+                <div class="main__cactus-cards d-flex flex-wrap justify-content-around">
+                    <div class="main__cactus-card" style=" padding: 10px 26px 23px 27px;">
+                        <img src="../static/images/cactus1.PNG" alt="">
+                        <h3 class="main__cactus-title">Garden Care</h3>
+                        <p class="main__cactus-des">We are an online plant shop offering a wide range of cheap and
+                            trendy plants.</p>
+                    </div>
+                    <div class="main__cactus-card " style=" padding: 10px 26px 23px 27px;">
+                        <img src="../static/images/cactus.PNG" alt="">
+                        <h3 class="main__cactus-title" style="margin-top: 23px;">Plant Renovation</h3>
+                        <p class="main__cactus-des">We are an online plant shop offering a wide range of cheap and
+                            trendy plants.</p>
+                    </div>
+                    <div class="main__cactus-card" style=" padding: 10px 26px 23px 27px; ">
+                        <img src="../static/images/cactus3.PNG" alt="">
+                        <h3 class="main__cactus-title" style="margin-top: 24px;">Watering Graden</h3>
+                        <p class="main__cactus-des">We are an online plant shop offering a wide range of cheap and
+                            trendy plants.</p>
+                    </div>
+                </div>
+                <div class="main__cactus-div" style="padding: 35px 25px 32px 0;">
+                    <p class="main__cactus-text">Would you like to join newsletters?</p>
+                    <form class="d-flex main__cactus-form">
+                        <input class="form-control " type="search" placeholder="enter your email address..." style="background: #FFFFFF; box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.06); border-radius:
+            6px 0 0 6px; margin-right: 0; font-weight: 400;  font-size: 14px; line-height: 16px; padding: 12px 86px 12px 12px; width: 280px; border: 1px solid #EFF0F6;"
+                               aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit" style="padding: 12px 25px ; font-weight: 700;
+            font-size: 18px;line-height: 16px;color: #FFFFFF  ;  font-family: 'Roboto', sans-serif; background: #46A358; border-color: #46A358; border-radius: 0px 6px 6px 0px;">
+                            Join
+                        </button>
+                    </form>
+                    <p class="main__cactus-descr">We usually post offers and challenges in newsletter. We’re your online
+                        houseplant destination. We offer a wide range of houseplants and accessories shipped directly
+                        from our (green)house to yours! </p>
+                </div>
+            </div>
+        </div>
+</main>
+
+<footer>
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-center flex-wrap"
+             style="background: rgba(70, 163, 88, 0.1); padding: 27px 130px 25px 23px ;">
+            <img src="../static/images/header__img.png" alt="">
+            <div class="d-flex align-items-center">
+                <img src="../static/images/Location.png" alt="">
+                <p class="footer__des">70 West Buckingham Ave.Farmingdale, NY 11735</p>
+            </div>
+            <div class=" contact d-flex align-items-center">
+                <img src="../static/images/Message.png" alt="">
+                <p class="footer__des">contact@greenshop.com</p>
+            </div>
+            <div class=" contact d-flex align-items-center">
+                <img src="../static/images/Calling.png" alt="">
+                <p class="footer__des">+88 01911 717 490</p>
+            </div>
+        </div>
+
+
+        <div class="footer__content">
+            <div class="footer__content-first d-flex flex-column ">
+                <h4 class="footer__content-title">My Account</h4>
+                <a href="" class="footer__content-a">My Account</a>
+                <a href="" class="footer__content-a">Our stores</a>
+                <a href="" class="footer__content-a">Contact us</a>
+                <a href="" class="footer__content-a">Career</a>
+                <a href="" class="footer__content-a">Specials</a>
+            </div>
+            <div class="footer__content-first d-flex flex-column ">
+                <h4 class="footer__content-title">Help & Guide</h4>
+                <a href="" class="footer__content-a">Help Center</a>
+                <a href="" class="footer__content-a">How to Buy</a>
+                <a href="" class="footer__content-a">Shipping & Delivery</a>
+                <a href="" class="footer__content-a">Product Policy</a>
+                <a href="" class="footer__content-a">How to Return</a>
+            </div>
+            <div class="footer__content-first d-flex flex-column ">
+                <h4 class="footer__content-title">Categories</h4>
+                <a href="" class="footer__content-a">House Plants</a>
+                <a href="" class="footer__content-a">Potter Plants</a>
+                <a href="" class="footer__content-a">SeedsSmall </a>
+                <a href="" class="footer__content-a">Plants</a>
+                <a href="" class="footer__content-a">Accessories</a>
+            </div>
+            <div class="footer__content-all">
+                <div class="d-flex flex-column social">
+                    <h4 class="footer__content-titlee">Social Media</h4>
+                    <div class="d-flex justify-content-between">
+                        <img src="../static/images/Facebook.png" alt="" style="padding:7px 11px ;" class="footer__link">
+                        <img src="../static/images/Instagram.png" alt="" class="footer__link">
+                        <img src="../static/images/Twitter.png" alt="" class="footer__link">
+                        <img src="../static/images/Linkedin.png" alt="" class="footer__link">
+                        <img src="../static/images/Union.png" alt="" class="footer__link">
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-start flex-column">
+                    <h4 class="footer__content-title ">We accept</h4>
+                    <img src="../static/images/image%2016.png" alt="">
+                </div>
+
+            </div>
+        </div>
+        <div class="">
+            <p class="parag">© 2021 GreenShop. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+
+</div>
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+  crossorigin="anonymous"></script> -->
+</body>
+
+</html>
